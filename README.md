@@ -1,1 +1,1 @@
-# Landin page for Taskia
+# Landin page for Taskia task management and lists tool.
