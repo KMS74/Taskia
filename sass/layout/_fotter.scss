@@ -1,5 +1,6 @@
 .footer {
   @include flex-container(column, nowrap, initial, center);
+
   min-height: 30rem;
   & div > * {
     @include responsive(tab-port) {

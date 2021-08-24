@@ -15,7 +15,7 @@ html {
     font-size: 50%;
   }
   @include responsive(phone) {
-    font-size: 30%;
+    font-size: 40%;
   }
   @include responsive(big-desktop) {
     font-size: 75%;
@@ -32,6 +32,10 @@ body {
   margin: 0 auto;
   @include responsive(tab-port) {
     max-width: calc(100% - 10rem);
+    margin: 0 auto;
+  }
+  @include responsive(phone) {
+    max-width: calc(100% - 6rem);
     margin: 0 auto;
   }
 }

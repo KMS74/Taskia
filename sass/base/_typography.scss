@@ -6,14 +6,18 @@
   text-align: left;
   @include responsive(tab-port) {
     font-size: 5rem;
-    font-weight: bold;
     text-align: left;
+    padding-right: 5rem;
+  }
+  @include responsive(phone) {
+    padding-right: 0;
+    font-size: 4.5rem;
   }
 }
 
 .heading-secondary {
   font-size: 4.5rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.33;
   @include responsive(tab-port) {
     font-size: 2.5rem;
@@ -22,7 +26,7 @@
 }
 .heading-tertiarya {
   font-size: 3.5rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.2;
   color: $dark;
   text-align: center;
@@ -37,6 +41,6 @@ p.paragraph {
   line-height: 1.75;
   color: $greyish;
   @include responsive(tab-port) {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }

@@ -36,6 +36,9 @@
       top: 7rem;
       right: 10rem;
     }
+    @include responsive(phone) {
+      right: 3rem;
+    }
   }
   &--top-left {
     position: absolute;
@@ -45,6 +48,9 @@
       top: 9rem;
       left: 10rem;
     }
+    @include responsive(phone) {
+      left: 3rem;
+    }
   }
   &--middle-right {
     position: absolute;
@@ -52,6 +58,9 @@
     right: 30rem;
     @include responsive(tab-port) {
       right: 18rem;
+    }
+    @include responsive(phone) {
+      right: 7rem;
     }
   }
   &--middle-left {
@@ -61,6 +70,10 @@
     @include responsive(tab-port) {
       left: 18rem;
     }
+    @include responsive(phone) {
+      left: 7rem;
+    }
+    
   }
   &--bottom-right {
     position: absolute;
@@ -69,6 +82,9 @@
     @include responsive(tab-port) {
       right: 10rem;
     }
+    @include responsive(phone) {
+      right: 3rem;
+    }
   }
   &--bottom-left {
     position: absolute;
@@ -76,6 +92,9 @@
     left: 15rem;
     @include responsive(tab-port) {
       left: 10rem;
+    }
+    @include responsive(phone) {
+      left: 3rem;
     }
   }
 }

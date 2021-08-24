@@ -15,6 +15,9 @@
     @include responsive(tab-port) {
       width: 70%;
     }
+    @include responsive(phone) {
+      width: 60%;
+    }
   }
   &__title {
     font-size: 3.2rem;

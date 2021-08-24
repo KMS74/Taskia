@@ -27,6 +27,15 @@
       display: none;
     }
   }
+  & p.paragraph {
+    @include responsive(tab-port) {
+      padding-right: 10rem;
+      line-height: 1.5
+    }
+    @include responsive(phone) {
+      padding-right: 0;
+    }
+  }
 }
 
 .why-taskia,
@@ -86,6 +95,9 @@
     transform: translate(-50%, -50%);
     @include responsive(tab-port) {
       font-size: 5rem;
+    }
+    @include responsive(phone) {
+      font-size: 4rem;
     }
   }
 }
