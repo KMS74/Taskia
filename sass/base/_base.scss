@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%; // 1rem = 10px; 10/16 * 100 = 62.5%
+  @include responsive(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include responsive(tab-port) {
+    font-size: 50%;
+  }
+  @include responsive(phone) {
+    font-size: 30%;
+  }
+  @include responsive(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.main-container {
+  max-width: calc(100% - 25rem);
+  margin: 0 auto;
+  @include responsive(tab-port) {
+    max-width: calc(100% - 10rem);
+    margin: 0 auto;
+  }
+}

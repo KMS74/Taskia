@@ -1,0 +1,91 @@
+.hero-section {
+  padding-top: 12rem;
+  @include flex-container(row, nowrap, initial, initial);
+  @include responsive(tab-port) {
+    @include flex-container(column, nowrap, space-between, initial);
+    padding-top: 8rem;
+  }
+  &__text {
+    @include flex-item;
+    @include flex-container(column, nowrap, initial, initial);
+    padding-right: 2rem;
+    @include responsive(tab-port) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  &__img {
+    @include flex-item;
+    transform: translateY(-6rem);
+    @include responsive(tab-port) {
+      display: inline-block;
+      width: 75%;
+      margin: 0 auto;
+      transform: translateY(0);
+    }
+    @include responsive(phone) {
+      display: none;
+    }
+  }
+}
+
+.why-taskia,
+.team-workflow {
+  @include flex-container(row, nowrap, initial, initial);
+  gap: 5rem;
+  @include responsive(tab-port) {
+    @include flex-container(column, nowrap, space-between, initial);
+  }
+
+  &__text {
+    @include flex-container(column, nowrap, space-between, initial);
+    @include flex-item;
+    @include responsive(tab-port) {
+      width: 100%;
+      gap: 3rem;
+    }
+  }
+  &__img {
+    @include flex-item;
+    @include responsive(tab-port) {
+      width: 100%;
+    }
+  }
+}
+
+.store-icons {
+  display: flex;
+  gap: 5rem;
+  @include responsive(tab-port) {
+    gap: 2rem;
+  }
+  img {
+    width: 100%;
+    @include responsive(tab-port) {
+      width: 50%;
+    }
+  }
+}
+.trust-us {
+  min-height: 55rem;
+  position: relative;
+  @include responsive(tab-port) {
+    min-height: 50rem;
+  }
+
+  &__number {
+    font-size: 10rem;
+    font-weight: 800;
+    line-height: 0.4;
+    letter-spacing: 1.5rem;
+    text-align: center;
+    color: $primary-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include responsive(tab-port) {
+      font-size: 5rem;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.heading-primary {
+  color: $dark;
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 1.4;
+  text-align: left;
+  @include responsive(tab-port) {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+.heading-secondary {
+  font-size: 4.5rem;
+  font-weight: bold;
+  line-height: 1.33;
+  @include responsive(tab-port) {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+}
+.heading-tertiarya {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: $dark;
+  text-align: center;
+  @include responsive(tab-port) {
+    font-size: 2rem;
+  }
+}
+
+p.paragraph {
+  font-family: Muli;
+  font-size: 2rem;
+  line-height: 1.75;
+  color: $greyish;
+  @include responsive(tab-port) {
+    font-size: 1.7rem;
+  }
+}

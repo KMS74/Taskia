@@ -1,0 +1,81 @@
+.avatar {
+  vertical-align: middle;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+
+  &--lg {
+    width: 10rem;
+    height: 10rem;
+    @include responsive(tab-port) {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+  &--md {
+    width: 7.5rem;
+    height: 7.5rem;
+    @include responsive(tab-port) {
+      width: 5.5rem;
+      height: 5.5rem;
+    }
+  }
+  &--sm {
+    width: 5rem;
+    height: 5rem;
+    @include responsive(tab-port) {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+  &--top-right {
+    position: absolute;
+    right: 15rem;
+    top: 10rem;
+    @include responsive(tab-port) {
+      top: 7rem;
+      right: 10rem;
+    }
+  }
+  &--top-left {
+    position: absolute;
+    left: 15rem;
+    top: 12rem;
+    @include responsive(tab-port) {
+      top: 9rem;
+      left: 10rem;
+    }
+  }
+  &--middle-right {
+    position: absolute;
+    top: 45%;
+    right: 30rem;
+    @include responsive(tab-port) {
+      right: 18rem;
+    }
+  }
+  &--middle-left {
+    position: absolute;
+    top: 50%;
+    left: 30rem;
+    @include responsive(tab-port) {
+      left: 18rem;
+    }
+  }
+  &--bottom-right {
+    position: absolute;
+    bottom: 10rem;
+    right: 15rem;
+    @include responsive(tab-port) {
+      right: 10rem;
+    }
+  }
+  &--bottom-left {
+    position: absolute;
+    bottom: 8rem;
+    left: 15rem;
+    @include responsive(tab-port) {
+      left: 10rem;
+    }
+  }
+}

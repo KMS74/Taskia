@@ -1,0 +1,60 @@
+@mixin flex-container($direction, $wrapping, $justify-content, $align-items) {
+  display: flex;
+  flex-flow: $direction $wrapping;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin flex-item {
+  width: 50%;
+  flex: 1 1 50%;
+}
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:  Phone
+600 - 900px: Tablet Portrait
+900 - 1200px: Tablet Landscape
+[1200 - 1800px] is where our normal styles apply
+1800px +: Big Desktop   
+
+$breakpoint argument choices:
+- phone 
+- tab-port
+- tap-land
+- big-desktop
+em and rem are not affected by the root font size setting in media query.
+em and rem equal to the default browser font size = 16px in media query. 
+em is the best option for media query.
+the order is very important.
+
+
+*/
+@mixin responsive($breakpoint) {
+  // if directive as like in programming langueges.
+  @if $breakpoint == phone {
+    // 600px
+    @media (max-width: 37.5em) {
+      // content directive allows us to pass a block of code into a mixins.
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    // 900px
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    // 1200px
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    // 1800px
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

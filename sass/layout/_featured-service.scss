@@ -1,0 +1,13 @@
+.featured-service {
+  margin-top: 15rem;
+
+  &__cards {
+    max-width: 90%;
+    margin: 0 auto;
+    @include flex-container(row, nowrap, space-between, initial);
+    @include responsive(tab-port) {
+      @include flex-container(column, nowrap, initial, initial);
+      max-width: 100%;
+    }
+  }
+}

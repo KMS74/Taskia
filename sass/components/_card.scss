@@ -1,0 +1,48 @@
+.card {
+  max-width: 30%;
+  @include flex-container(column, nowrap, initial, center);
+  color: $dark;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+
+  @include responsive(tab-port) {
+    max-width: 100%;
+  }
+
+  &__img {
+    width: 80%;
+    @include responsive(tab-port) {
+      width: 70%;
+    }
+  }
+  &__title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.33;
+    text-align: center;
+    padding: 0 3rem;
+  }
+  &__description {
+    font-family: Muli;
+    font-size: 1.6rem;
+    line-height: 1.63;
+    text-align: center;
+    margin: 5rem 0;
+    padding: 0 3rem;
+  }
+  &:nth-child(1) {
+    background-color: $primary-color;
+    color: #fff;
+  }
+  &:nth-child(2) {
+    background-color: #e9f0ff;
+    transform: translateY(7rem);
+    @include responsive(tab-port) {
+      transform: translateY(0);
+    }
+  }
+  &:nth-child(3) {
+    background-color: #ffe7aa;
+  }
+}

@@ -1,0 +1,42 @@
+.try-free {
+  @include flex-container(row, nowrap, space-between, center);
+  margin-right: 2rem;
+  @include responsive(tab-port) {
+    @include flex-container(column, nowrap, initial, initial);
+    width: 100%;
+    margin-right: 0;
+    gap: 2rem;
+  }
+
+  &__input {
+    width: 34rem;
+    padding: 2rem;
+    margin-right: 5rem;
+    outline: 0;
+    border-radius: 100px;
+    border: 2px solid $smoke-white;
+    transition: all 0.3s;
+    @include responsive(tab-port) {
+      width: 100%;
+      // padding: 1.5rem;
+      border: 1px solid $smoke-white;
+      margin-right: 0;
+      font-size: 1.5rem;
+    }
+  }
+  &__input::placeholder {
+    opacity: 0.36;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.08rem;
+    text-align: left;
+    color: $dark-85;
+    @include responsive(tab-port) {
+      font-size: 1.2rem;
+    }
+  }
+  &__input:focus {
+    border-color: $primary-color;
+    color: $dark-85;
+  }
+}

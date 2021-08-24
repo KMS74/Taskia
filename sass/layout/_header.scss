@@ -1,0 +1,13 @@
+.header {
+  @include flex-container(row, nowrap, space-between, initial);
+  align-items: center;
+  padding-top: 2rem;
+  &__logo {
+    font-size: 4.5rem;
+    color: $primary-color;
+    font-weight: 600;
+    @include responsive(tab-port) {
+      font-size: 3rem;
+    }
+  }
+}
