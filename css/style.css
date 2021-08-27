@@ -114,6 +114,21 @@ p.paragraph {
 .u-text-center {
   text-align: center; }
 
+.valid-input-border {
+  border: 2px solid #00ff00 !important; }
+
+.invalid-input-border {
+  border: 2px solid #ff0000 !important; }
+
+.normal-input-border {
+  border: 2px solid #ebebeb !important; }
+
+.email-error {
+  color: #ff0000 !important; }
+
+.email-valid {
+  color: #00ff00 !important; }
+
 .avatar {
   vertical-align: middle;
   border-radius: 50%;
@@ -230,7 +245,8 @@ p.paragraph {
     @media (max-width: 56.25em) {
       .btn--filled {
         padding: 1.5rem 2.5rem;
-        letter-spacing: 1.2px; } }
+        letter-spacing: 1.2px;
+        margin-top: 2rem; } }
 
 .card {
   max-width: 30%;
@@ -279,6 +295,7 @@ p.paragraph {
     background-color: #ffe7aa; }
 
 .try-free {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -317,6 +334,15 @@ p.paragraph {
   .try-free__input:focus {
     border-color: #525ffb;
     color: rgba(30, 28, 36, 0.85); }
+  .try-free .validation-text {
+    position: absolute;
+    left: 2rem;
+    top: 7rem;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 0.8rem; }
 
 .featured-service {
   margin-top: 15rem; }

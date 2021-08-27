@@ -1,4 +1,5 @@
 .try-free {
+  position: relative;
   @include flex-container(row, nowrap, space-between, center);
   margin-right: 2rem;
   @include responsive(tab-port) {
@@ -30,10 +31,20 @@
     letter-spacing: 0.08rem;
     text-align: left;
     color: $dark-85;
-    
   }
   &__input:focus {
     border-color: $primary-color;
     color: $dark-85;
   }
+  & .validation-text {
+    position: absolute;
+    left: 2rem;
+    top: 7rem;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 0.8rem;
+  }
 }
+

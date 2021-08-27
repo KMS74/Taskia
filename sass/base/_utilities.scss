@@ -14,3 +14,21 @@
 .u-text-center {
   text-align: center;
 }
+
+.valid-input-border {
+  border: 2px solid #00ff00 !important;
+}
+
+.invalid-input-border {
+  border: 2px solid #ff0000 !important;
+}
+
+.normal-input-border {
+  border: 2px solid $smoke-white !important;
+}
+.email-error {
+  color: #ff0000 !important;
+}
+.email-valid {
+  color: #00ff00 !important;
+}
